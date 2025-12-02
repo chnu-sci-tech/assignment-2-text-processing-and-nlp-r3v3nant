@@ -1,0 +1,14 @@
+{
+    "texts": [
+        "If you move beyond just querying web pages to web APIs, you’ll most likely encounter REST APIs\n(Representational State Transfer) REST is more a design architecture, but a few key points:\n1. Uses standard HTTP interface and methods (GET, PUT, POST, DELETE)",
+        "2. Stateless – the server doesn’t remember what you were doing Rule of thumb: if you’re\nsending your account key along with each API call, you’re probably using a REST API",
+        "GitHub API uses\nGET/PUT/DELETE to let you query or update elements in your GitHub account automatically\nExample of REST: server doesn’t remember your last queries, for instance you always need to\ninclude your access token if using it this way.",
+        "Refers to any delimited text file (not always separated by commas)\nIf values themselves contain commas, you can enclose them in quotes (our registrar apparently\nalways does this, just to be safe).",
+        "The main format for the web (though XML seems to be loosing a bit of popularity to JSON for\nuse in APIs / file formats). XML files contain hiearchical content delineated by tags HTML is syntactically like XML but not as\nstrict (e.g., open tags are not always closed).",
+        "There are a number of XML/HTML parsers for Python, but a nice one for data science is the\nBeautifulSoup library (specifically focused on getting data out of XML/HTML files).",
+        "Once you have loaded data (or if you need to build a parser to load some other data format), you\nwill often need to search for specific elements within the data.\nE.g., find the first occurrence of the string “data science”.",
+        "The real power of regular expressions comes in the ability to match multiple possible sequence\nof characters. Special characters in regular expressions: .^$*+?{}\\[]|() (if you want to\nmatch these characters exactly, you need to escape them: \\$).",
+        "We often want to obtain more information that just whether we found a match or not (for\ninstance, we may want to know what text matched)\nGrouping: enclose portions of the regular expression in parentheses to “remember” these\nportions of the match (\\w+)\\s([Ss]cience).",
+        "There is an order of operations in regular expressions. abc|def matches the strings “abc” or\n“def”, not “ab(c or d)ef”. You can get around this using parenthesis e.g. a(bc|de)f. This also\ncreates a group, use a(?:bc|de)f if you don’t want to capture it. "
+    ]
+}
